@@ -47,26 +47,33 @@ st.header("3. Heart Rate")
 
 st.latex(r"HR=HR_0+G_cC+G_eE")
 
-A simplified representation of an increasing heart-rate response
-to compensation and uncompensated disturbance.
+st.markdown("""
+The model uses a baseline heart rate and illustrative gains
+to represent the influence of compensation and uncompensated
+disturbance.
+""")
 
 st.header("4. Blood Pressure")
 
 st.latex(r"SBP=SBP_0-G_sE^p")
 st.latex(r"DBP=DBP_0+G_dC-G_eE^p")
 
-These phenomenological equations represent an initial compensatory
-phase followed by declining blood pressure. They are not a complete
-haemodynamic model.
+st.markdown("""
+These phenomenological equations represent an initial
+compensatory phase followed by declining blood pressure.
+They are not derived from a complete haemodynamic model.
+""")
 
 st.header("5. Oxygen Saturation")
 
 st.latex(r"SpO_2(t)=98\%")
 
+st.markdown("""
 SpO₂ is held constant in this version to illustrate that oxygen
 saturation does not measure total haemoglobin or total oxygen
 delivery. Blood loss can reduce oxygen-carrying capacity even
 when saturation remains relatively normal.
+""")
 
 st.divider()
 
@@ -79,9 +86,11 @@ The physiological concepts informing this project include:
   compensatory mechanisms, including increased heart rate and
   peripheral vasoconstriction. As compensation becomes insufficient,
   blood pressure can decline.
+
 - **Oxygen transport:** Oxygen delivery depends on more than
   haemoglobin saturation; the amount of circulating haemoglobin
   also matters.
+
 - **Pulse oximetry:** SpO₂ estimates the proportion of haemoglobin
   saturated with oxygen. It does not directly measure haemoglobin
   concentration or tissue oxygen delivery.
